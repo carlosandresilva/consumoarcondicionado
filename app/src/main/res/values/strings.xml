@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ConsumoArCondicionado</string>
+    <string name="consumo_ar_condicionado">Cáuculo De Consumo Ar Condicionado</string>
+    <string name="Horas_trabalhada">Horas Por Dia</string>
+    <string name="Dias_mês">Dias Por Mês</string>
+    <string name="consumo_eficiencia_aparelho">Consumo De Energia Do Aparelho KWH/mês</string>
+    <string name="preco_energia">Preço Da Energia(reais p/KW/h</string>
+    <string name="bunton_calcu">Caucular</string>
+
+</resources>
