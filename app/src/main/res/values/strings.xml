@@ -1,10 +1,15 @@
 <resources>
-    <string name="app_name">ConsumoArCondicionado</string>
-    <string name="consumo_ar_condicionado">Cáuculo De Consumo Ar Condicionado</string>
+    <string name="app_name">CONSUMO DE AR CONDICIONADO</string>
+    <string name="consumo_ar_condicionado">CALCULO DE CONSUMO DE AR CONDICIONADO</string>
     <string name="Horas_trabalhada">Horas Por Dia</string>
     <string name="Dias_mês">Dias Por Mês</string>
     <string name="consumo_eficiencia_aparelho">Consumo De Energia Do Aparelho KWH/mês</string>
     <string name="preco_energia">Preço Da Energia(reais p/KW/h</string>
-    <string name="bunton_calcu">Caucular</string>
+    <string name="bunton_calcu">CALCULAR</string>
+    <string name="title_activity_calculo__de__aparelhos">CALCULO DE APARELHO</string>
+    <string name="title_activity_geladeira">GELADEIRA</string>
+    <string name="title_activity_ferro_de__passar">FERRO DE PASSAR</string>
+    <string name="title_activity_maquina_de__lavar__roupa">MAQUINA DE LAVAR ROUPA</string>
+    <string name="title_activity_listar">LISTAR</string>
 
 </resources>

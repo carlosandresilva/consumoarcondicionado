@@ -8,12 +8,37 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name=".Arcondicionado" >
+        <activity
+            android:name=".Calculo_De_AparelhosActivity"
+            android:label="@string/title_activity_calculo__de__aparelhos"
+            android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Arcondicionado" >
+        </activity>
+        <activity
+            android:name=".GeladeiraActivity"
+            android:label="@string/title_activity_geladeira"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Ferro_de_PassarActivity"
+            android:label="@string/title_activity_ferro_de__passar"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Maquina_de_Lavar_RoupaActivity"
+            android:label="@string/title_activity_maquina_de__lavar__roupa"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ListarActivity"
+            android:label="@string/title_activity_listar"
+            android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
 

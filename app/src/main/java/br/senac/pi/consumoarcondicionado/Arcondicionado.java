@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Arcondicionado extends AppCompatActivity {
 
@@ -15,6 +16,7 @@ public class Arcondicionado extends AppCompatActivity {
 
 
         findViewById(R.id.btncalcular).setOnClickListener(calculo());
+        findViewById(R.id.btnsalvar).setOnClickListener(salvar());
     }
     private View.OnClickListener calculo (){
         return new View.OnClickListener() {
@@ -30,10 +32,31 @@ public class Arcondicionado extends AppCompatActivity {
                 double consumo = Double.parseDouble(txtConsumoKwh.getText().toString());
                 double precoenergia = Double.parseDouble(txtPrecoenergia.getText().toString());
               double resultado = (((horasdia*dias)/30)*consumo)*precoenergia;
-              texto.setText("o consumo do ar condicionado é: "+""+resultado);
+              texto.setText(String.valueOf(resultado));
 
             }
         };
+
+
+    }
+
+    private View.OnClickListener salvar (){
+        return new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                TextView texto = (TextView)findViewById(R.id.txt);
+               Calculo calculo = new Calculo();
+                ConsumoBD BD = new ConsumoBD(Arcondicionado.this);
+
+                calculo.setNome("arcondicionado");
+                calculo.setResultado(Double.parseDouble(texto.getText().toString()));
+
+                BD.save(calculo);
+                Toast.makeText(Arcondicionado.this, "resultado salvo com sucesso", Toast.LENGTH_SHORT).show();
+            }
+        };
+
 
     }
 }
